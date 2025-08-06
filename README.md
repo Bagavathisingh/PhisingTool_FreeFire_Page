@@ -38,3 +38,13 @@ pip install -r requirements.txt
 ```bash
 python server.py
 ```
+## After Run the server.py the terminal Belike :
+```bash
+ * Serving Flask app 'server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://0.0.0.0:5000
+Press CTRL+C to quit
+127.0.0.1 - - [06/Aug/2025 23:59:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 23:59:10] "POST /login HTTP/1.1" 200 -
+```
